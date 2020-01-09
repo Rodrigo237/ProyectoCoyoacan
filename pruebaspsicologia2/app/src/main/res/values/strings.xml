@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">cuestionariopsicologia</string>
+
+    <string name="nombret">Pruebas Psicologícas</string>
+    <string name="version">Versión 02-Dic-2019 01:32</string>
+
+    <string name="Iniciar">Iniciar Cuestionario</string>
+    <string name="IngresarP">Ingresar Prospectos</string>
+    <string name="BuscarP">Buscar Prospectos</string>
+    <string name="BuscarC">Buscar Cuestionarios</string>
+    <string name="Admi">Administrador</string>
+    <string name="Salir">Salir</string>
+    <string name="cuestseleccion">Selección,Optimización y Compensación</string>
+    <string name="guardar">Guardar</string>
+
+
+    <!-- Botones en TabletaBuscarProspecto -->
+    <string name="boton_limpiar_campos">Limpiar campos</string>
+    <string name="boton_seleccionar_area">Seleccionar área</string>
+    <string name="boton_seleccionar_manzana">Seleccionar manzana</string>
+    <string name="boton_seleccionar_familia">Seleccionar familia</string>
+    <string name="boton_crear_cuestionario">Crear cuestionario</string>
+    <string name="boton_buscar_cuestionario">Buscar cuestionario</string>
+
+    <!-- Textos en TabletaBuscarProspecto -->
+    <!-- Textos en TabletaBuscarCuestionario -->
+    <string name="texto_buscar_prospecto">Buscar prospecto de Psicología</string>
+    <string name="texto_buscar_cuestionario">Buscar cuestionario de Psicología</string>
+    <string name="texto_mostrar_cuestionario">Mostrar cuestionario de Psicología</string>
+    <string name="texto_iniciar_cuestionario">Iniciar cuestionario de Psicología</string>
+    <string name="texto_procesando">Procesando área</string>
+    <string name="texto_municipio">Alcaldía</string>
+    <string name="texto_ageb">Ageb</string>
+    <string name="texto_area">Área</string>
+    <string name="texto_manzana">Manzana</string>
+    <string name="texto_vivienda">Vivienda</string>
+    <string name="texto_nombre">Nombre</string>
+    <string name="texto_paterno">Paterno</string>
+    <string name="texto_materno">Materno</string>
+    <string name="texto_sexo">Sexo</string>
+    <string name="texto_edad_anterior">Edad anterior</string>
+    <string name="texto_edad_actual">Edad actual</string>
+
+
+    <string name="campid">id</string>
+    <string name="campnom">Nombre</string>
+    <string name="camptel">Telefono</string>
+    <string name="buscarProspect">Ingrese el Prospecto que desea buscar</string>
+    <string name="alcal">Alcaldía</string>
+    <string name="ageb">Ageb</string>
+    <string name="area">Área</string>
+    <string name="manzana">Manzana</string>
+    <string name="vivir">Vivienda</string>
+    <string name="nomp">Nombre</string>
+    <string name="pat">A.Paterno</string>
+    <string name="mat">A.Materno</string>
+    <string name="limpiar">Limpiar Campos</string>
+    <string name="document">Documento</string>
+    <string name="buscaNom">Nombre</string>
+    <string name="buscatel">Telefono</string>
+    <string name="buscapros">Buscar</string>
+    <string name="actuali">Actualizar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="siguiente">Siguiente</string>
+
+    <string name="pO1">Continúo trabajando en lo que me he propuesto hasta que  lo consigo.</string>
+    <string name="pO2">Hago todo el esfuerzo posible para alcanzar mis objetivos.</string>
+    <string name="pO3">Si algo es importante para mí, me dedico a ello totalmente.</string>
+
+    <string name="pSBP1">Si no puedo seguir adelante como solía hacerlo,dirijo mi atención primero al objetivo más importante.</string>
+    <string name="pSBP2">Cuando algo es totalmente imposible de conseguir, dirijo mi esfuerzo a lo que aún posible</string>
+    <string name="pSBP3">Si no puedo hacer algo tan bien como solía hacerlo, me concentro sólo en lo esencial.</string>
+
+    <string name="pSE1">Siempre me concentro en un objetivo importante a la vez</string>
+    <string name="pSE2">Me comprometo con uno o dos objetivos importantes en mi vida</string>
+    <string name="pSE3">Siempre persigo mis metas una a una</string>
+
+    <string name="pC1">Cuando algo no me sale como siempre, continúo intentando otros caminos para alcanzar el resultado al que estoy acostumbrado.</string>
+    <string name="pC2">Cuando algo en mi vida no me sale como siempre,pido ayuda o consejo a otros.</string>
+    <string name="pC3">Cuando se me hace difícil lograr los mismos resultados, continúo intentándolo hasta que puedo hacerlo tan bien como antes.</string>
+
+    <string name="res1">Nunca</string>
+    <string name="res2">Muy pocas veces</string>
+    <string name="res3">Algunas veces</string>
+    <string name="res4">Casi siempre</string>
+    <string name="res5">Siempre</string>
+
+
+    <string name="pdep1">¿Durante la última semana usted sentía como si no pudiera quitarse de encima la tristeza?</string>
+    <string name="pdep2">¿Durante la última semana usted le costaba concentrarse en lo que estaba haciendo?</string>
+    <string name="pdep3">¿Durante la última semana usted se sintió deprimido/a?</string>
+    <string name="pdep4">¿Durante la última semana usted le parecía que todo lo que hacía era un esfuerzo?</string>
+    <string name="pdep5">¿Durante la última semana usted no dormió bien?</string>
+    <string name="pdep6">¿Durante la última semana usted disfrutó de la vida</string>
+    <string name="pdep7">¿Durante la última semana usted se sintió triste?</string>
+
+    <string name="resdep1">Rara vez o nunca: Menos de 1 día</string>
+    <string name="resdep2">Pocas veces o alguna vez: 1-2 días</string>
+    <string name="resdep3">Un número de veces considerable: 3-4 días</string>
+    <string name="resdep4">Todo el tiempo o la mayoría del tiempo: 5-7 días</string>
+
+    <string name="b1">1.Baño/Ducha</string>
+    <string name="resb1">Independiente. Se baña complentamente en ducha o baño sin ayuda, ni ser supervisado/a. </string>
+    <string name="resb11">Dependiente. Necesita ayuda o supervisión.</string>
+    <string name="b2">2.Vestido</string>
+    <string name="resb2">Independiente. Capaz de ponerse y quitarse la ropa, amarrarse los zapatos, abotonarse y colocarse otros suplementos sin necesitar ayuda.</string>
+    <string name="resb22">Ayuda. Necesita ayuda, pero al menos realiza la mitad de las tareas en un tiempo razonable sin ayuda.</string>
+    <string name="resb23">Dependiente. Necesita ayuda para la mayoría de las tareas.</string>
+    <string name="b3">3.Aseo Personal</string>
+    <string name="resb31">Independiente. Reañoza todas las actividades personales sin ayuda alguna, incluye lavarse la cara y las manos, peinarse, lavarse los dientes, maquillarse y/o afeitarse.</string>
+    <string name="resb32">Dependiente. Necesita alguna ayuda para alguna de estas actividades.</string>
+    <string name="b4">4.Uso de retrete(taza de baño)</string>
+    <string name="resb41">Independiente. Usa el retrete o taza de baño. Se sienta, se levanta, se limpia y se pone la ropa solo/a.</string>
+    <string name="resb42">Ayuda. Necesita ayuda para mantener el equilibrio sentado/a, limpiarse, ponerse o quitarse la ropa.</string>
+    <string name="resb43">Dependiente. Necesita ayuda completa para el uso del retrete o taza de baño.</string>
+    <string name="b5">5.Uso de escaleras</string>
+    <string name="resb51">Independiente. Sube o baja escaleras sin supervisión, puede utilizar el barandal o bastón si lo necesita.</string>
+    <string name="resb52">Ayuda. Necesita ayuda física o supervisión para subir o bajar escaleras.</string>
+    <string name="resb53">Dependiente. Es incapaz de subir y bajar escaleras, requiere de ascensor o de ayuda completa.</string>
+    <string name="b6">6.Traslado cama-sillón</string>
+    <string name="resb61">Independiente. No necesita ayuda. Si usa silla de ruedas se traslada a la cama independientemente.</string>
+    <string name="resb62">Mínima ayuda. Incluye supervisión o una pequeña ayuda para el traslado.</string>
+    <string name="resb63">Gran ayuda. Requiere de una gran ayuda para el traslado (de una persona fuerte o entrenada), es capa de permanecer sentado sin ayuda. </string>
+    <string name="b7">7.Desplazamiento</string>
+    <string name="resb71">Independiente. Puede andar 50 metros o su equivalente en casa sin ayuda ni supervisión. Puede utilizar cualquier ayuda mecánica, excepto un andador. Si utiliza prótesis puede ponérsela y quitársela solo/a.</string>
+    <string name="resb72">Ayuda. Puede caminar al menos 50 metros, pero necesita ayuda o supervisión por otra persona (física o verbal], o utilizar andador.</string>
+    <string name="resb73">Independiente en silla de ruedas. Propulsa su silla de ruedas al menos 50 metros sin ayuda ni supervisión.</string>
+    <string name="resb74">Dependiente. No camina solo/a o no propulsa su silla solo/a.</string>
+    <string name="b8">8.Control de orina</string>
+    <string name="b81">Continente. No presenta episodios de incontinencia. Si necesita sonda o colector, es capaz de atender solo/a su cuidado.</string>
+    <string name="b82">Incontinencia ocasional. Como máximo un episodio de incontinencia en 24 horas. Necesita ayuda para el cuidado de la sonda o el colector.</string>
+    <string name="b83">Incontinente. Episodios de incontinencia con frecuencia más de una vez en 24 horas. Incapaz de manejar solo/a la sonda o el colector.</string>
+    <string name="b9">9.Control de Heces</string>
+    <string name="b91">Continente. No presenta episodios de incontinencia. Si usa enemas o supositorios, se los administra solo/a.</string>
+    <string name="b92">Incontinencia ocasional. Episodios ocasionales una vez por semana. Necesita ayuda para usar enemas o supositorios.</string>
+    <string name="b93">Incontinente. Más de un episodio por semana.</string>
+    <string name="b10">10.Alimentación</string>
+    <string name="resb101">Incontinente. Más de un episodio por semana.</string>
+    <string name="resb102">Ayuda. Necesita ayuda para cortar la carne, el pan, extender la mantequilla, pero es capaz de comer solo/a.</string>
+    <string name="resb103">Dependiente. Depende de otra persona para comer.</string>
+
+    <string name="fin">Finalizar</string>
+    <string name="cuestcom">Cuestionario Completo</string>
+    <string name="cuestincom">Cuestionario Incompleto</string>
+    <string name="negarcontestacion">Se negó a contestar el cuestionario</string>
+    <string name="NoSabeRes">No Sabe / No responde</string>
+    <string name="Resultado">Resultado del Cuestionario</string>
+</resources>

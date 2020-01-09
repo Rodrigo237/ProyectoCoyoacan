@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabletaAdministrador"
+    tools:ignore="ContentDescription" >
+
+    <TextView
+        android:id="@+id/texto_administrador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="05dp"
+        android:textColor="#00FF00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/lista_de_archivos"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/texto_administrador"
+        android:layout_marginTop="20dp"
+        android:background="#00949B"
+        android:textColor="#0000FF"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+    <TextView
+        android:id="@+id/texto_cantidad_de_registros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/lista_de_archivos"
+        android:layout_marginTop="20dp"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/texto_contenido_periodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/texto_cantidad_de_registros"
+        android:layout_marginTop="10dp"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/texto_contenido_hoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/texto_cantidad_de_registros"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="240dp"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonImportarBaseDeDatos"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/texto_cantidad_de_registros"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="importar_base_de_datos"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonExportarBaseDeDatos"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/botonImportarBaseDeDatos"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="exportar_base_de_datos"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonEliminarBaseDeDatos"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/botonExportarBaseDeDatos"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="eliminar_base_de_datos"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/botonEnviarCorreo"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/botonEliminarBaseDeDatos"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="enviar_correo"
+        android:textAppearance="?android:attr/textAppearanceMediumInverse"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:onClick="enviarCorreo"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/monitor_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto_contenido_periodo"
+        android:layout_alignLeft="@+id/lista_de_archivos"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/monitor_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_01"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_02"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_03"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_04"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_05"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_06"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_07"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_08"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_09"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <TextView
+        android:id="@+id/monitor_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/texto_administrador"
+        android:layout_below="@+id/monitor_10"
+        android:textColor="#00FF00"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="00dp" />
+
+    <ImageButton
+        android:id="@+id/botonFlechaIzquierda"
+        android:layout_width="65dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="ventanaAnterior"
+         />
+
+</RelativeLayout>
