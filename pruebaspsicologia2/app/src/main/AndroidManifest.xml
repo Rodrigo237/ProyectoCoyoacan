@@ -24,7 +24,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BuscarCuestionarios"></activity>
+        <activity android:name=".MiniMentalS"></activity>
+        <activity android:name=".MiniMentalP" />
+        <activity android:name=".BuscarCuestionarios" />
         <activity android:name=".terminacion" />
         <activity android:name=".Barthel" />
         <activity android:name=".Depresion" />

@@ -56,13 +56,13 @@ public class SQLiteOpenHelperCuestionario extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
-//        db.execSQL(DATABASE_CREATE);
+        db.execSQL(DATABASE_CREATE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // TODO Auto-generated method stub
-//        db.execSQL("delete table if exists " + TablaCuestionarioIndividual.TABLA_CUESTIONARIO_INDIVIDUAL);
+       db.execSQL(String.format("delete table if exists %s", TablaCuestionarioIndividual.TABLA_CUESTIONARIO_INDIVIDUAL));
         onCreate(db);
     }
 
