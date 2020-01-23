@@ -1,12 +1,17 @@
 package com.iventa.pruebaspsicologia2;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.Toast;
+import com.iventa.pruebaspsicologia2.bases.FuenteCuestionarioBasico;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class seleccion extends AppCompatActivity {
 
@@ -23,11 +28,25 @@ public class seleccion extends AppCompatActivity {
     RadioButton  nunca10,muy10,algun10,casi10,siempre10;
     RadioButton  nunca11,muy11,algun11,casi11,siempre11;
     RadioButton  nunca12,muy12,algun12,casi12,siempre12;
+    private SQLiteDatabase db;
+    FuenteCuestionarioBasico fuenteCuestionarioBasico;
+    String comandoSql;
 
+    private String seleccion_fecha;
+    private String seleccion_hora_ini;
+    private String seleccion_fechor_ini;
+
+    private static String la_tableta;
+    private static String el_encuesto;
+    private String el_registro;
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seleccion);
+
+        Date date = new Date();
+        seleccion_fecha = "'" + new SimpleDateFormat("yyyy-MM-dd").format(date.getTime()) + "'";
+        seleccion_hora_ini = "'" + new SimpleDateFormat("HH:mm:ss").format(date.getTime()) + "'";
 
         bsig = (Button)findViewById(R.id.sigselec);
 
@@ -102,6 +121,40 @@ public class seleccion extends AppCompatActivity {
         algun12 = (RadioButton)findViewById(R.id.algun12);
         casi12 = (RadioButton)findViewById(R.id.casi12);
         siempre12 = (RadioButton)findViewById(R.id.siempre12);
+
+        fuenteCuestionarioBasico = new FuenteCuestionarioBasico(this);
+        fuenteCuestionarioBasico.open();
+        String comando_00 = "SELECT registro, tableta, encuesto FROM posicionador";
+        String el_registro_leido[] = fuenteCuestionarioBasico.tomarEncuesto(comando_00);
+        if (el_registro_leido[0] != null) {
+             el_registro = String.valueOf(el_registro_leido[0].toString());
+             la_tableta = String.valueOf(el_registro_leido[1].toString());
+             el_encuesto = String.valueOf(el_registro_leido[2].toString());
+        }
+
+        String comando_0 = "SELECT nombre, paterno, materno FROM cuestionariobasico WHERE registro = " + "'" + el_registro + "'";
+        String identificacion[] = fuenteCuestionarioBasico.tomarNombre(comando_0);
+
+        if ((identificacion[0] != null) && (identificacion[1] != null )) {
+            String el_nombre = String.valueOf(identificacion[0].toString());
+            String el_paterno = String.valueOf(identificacion[1].toString());
+            String el_materno = String.valueOf(identificacion[2].toString());
+
+            if ((el_nombre.length() > 0) && (el_paterno.length() > 0) && (el_materno.length() > 0)) {
+              //  exhibe_nombre.setText("Registro de:" + el_nombre.trim() + " " + el_paterno.trim() + " " + el_materno.trim());
+            }
+        }
+
+        String comando_1 = "SELECT registro, " +
+                "municipio, ageb, area, manzana, vivienda, " +
+                "nombre, paterno, materno, " +
+                "sexo, edad, edad_hoy, " +
+                "encuesto " +
+                "FROM cuestionariobasico " +
+                "WHERE registro = " + "'" + el_registro + "'";
+
+        String matriz[] = fuenteCuestionarioBasico.abrirSeleccion_0101(comando_1);
+
     }
 
 
@@ -117,6 +170,8 @@ public class seleccion extends AppCompatActivity {
         switch (view.getId()){
             case R.id.nunca1:
                 Toast.makeText(this,"1",Toast.LENGTH_LONG).show();
+                comandoSql = "INSERT INTO CuestionarioBasico(COLUMNA_P_01) VALUES(1)";
+                fuenteCuestionarioBasico.abrirSeleccion_0101(comandoSql);
                 break;
             case R.id.muy1:
                 Toast.makeText(this,"2",Toast.LENGTH_LONG).show();

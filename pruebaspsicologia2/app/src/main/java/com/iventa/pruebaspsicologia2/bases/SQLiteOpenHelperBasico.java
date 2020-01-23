@@ -36,8 +36,6 @@ public class SQLiteOpenHelperBasico extends SQLiteOpenHelper {
         public static String COLUMNA_FECHA = "fecha";
         public static String COLUMNA_HORA_INI = "hora_ini";
         public static String COLUMNA_FECHOR_INI = "fechor_ini";
-        public static String COLUMNA_LATITUD_A = "latitud_a";
-        public static String COLUMNA_LONGITUD_A = "longitud_a";
         public static String COLUMNA_P_01 = "p_01";
         public static String COLUMNA_T_01 = "t_01";
         public static String COLUMNA_P_02 = "p_02";
@@ -96,6 +94,48 @@ public class SQLiteOpenHelperBasico extends SQLiteOpenHelper {
         public static String COLUMNA_TB_09 = "tb_09";	// Causa de fallecimiento.
         public static String COLUMNA_PB_10 = "pb_10";		// Certificado de defunci�n.
         public static String COLUMNA_TB_10 = "tb_10";		// Certificado de defunci�n.
+        public static String COLUMNA_MI_01 = "mi_01";
+        public static String COLUMNA_TMI_01 = "tmi_01";
+        public static String COLUMNA_MI_02 = "mi_02";
+        public static String COLUMNA_TMI_02 = "tmi_02";
+        public static String COLUMNA_MI_03 = "mi_03";
+        public static String COLUMNA_TMI_03 = "tmi_03";
+        public static String COLUMNA_MI_04 = "mi_04";
+        public static String COLUMNA_TMI_04 = "tmi_04";
+        public static String COLUMNA_MI_05 = "mi_05";
+        public static String COLUMNA_TMI_05 = "tmi_05";
+        public static String COLUMNA_MI_06 = "mi_06";
+        public static String COLUMNA_TMI_06 = "tmi_06";
+        public static String COLUMNA_MI_07 = "mi_07";
+        public static String COLUMNA_TMI_07 = "tmi_07";
+        public static String COLUMNA_MI_08 = "mi_08";
+        public static String COLUMNA_TMI_08 = "tmi_08";
+        public static String COLUMNA_MI_09 = "mi_09";
+        public static String COLUMNA_TMI_09 = "tmi_09";
+        public static String COLUMNA_MI_10 = "mi_10";
+        public static String COLUMNA_TMI_10 = "tmi_10";
+        public static String COLUMNA_MI_11 = "mi_11";
+        public static String COLUMNA_TMI_11 = "tmi_11";
+        public static String COLUMNA_MI_12 = "mi_12";
+        public static String COLUMNA_TMI_12 = "tmi_12";
+        public static String COLUMNA_MI_13 = "mi_13";
+        public static String COLUMNA_TMI_13 = "tmi_13";
+        public static String COLUMNA_MI_14 = "mi_14";
+        public static String COLUMNA_TMI_14 = "tmi_14";
+        public static String COLUMNA_MI_15 = "mi_15";
+        public static String COLUMNA_TMI_15 = "tmi_15";
+        public static String COLUMNA_MI_16 = "mi_16";
+        public static String COLUMNA_TMI_16 = "tmi_16";
+        public static String COLUMNA_MI_17 = "mi_17";
+        public static String COLUMNA_TMI_17 = "tmi_17";
+        public static String COLUMNA_MI_18 = "mi_18";
+        public static String COLUMNA_TMI_18 = "tmi_18";
+        public static String COLUMNA_MI_19 = "mi_19";
+        public static String COLUMNA_TMI_19 = "tmi_19";
+        public static String COLUMNA_MI_20 = "mi_20";
+        public static String COLUMNA_TMI_20 = "tmi_20";
+        public static String COLUMNA_MI_21 = "mi_21";
+        public static String COLUMNA_TMI_21 = "tmi_21";
         public static String COLUMNA_RE_01 = "re_01"; // Resultado de la entrevista.
         public static String COLUMNA_TRE_01 = "tre_01";
         public static String COLUMNA_FECHA_FIN = "fecha_fin";
@@ -135,8 +175,6 @@ public class SQLiteOpenHelperBasico extends SQLiteOpenHelper {
             + TablaCuestionarioBasico.COLUMNA_FECHA + " date, "
             + TablaCuestionarioBasico.COLUMNA_HORA_INI + " time, "
             + TablaCuestionarioBasico.COLUMNA_FECHOR_INI + " text, "
-            + TablaCuestionarioBasico.COLUMNA_LATITUD_A + " text, "
-            + TablaCuestionarioBasico.COLUMNA_LONGITUD_A + " text, "
             + TablaCuestionarioBasico.COLUMNA_P_01 + " integer, "
             + TablaCuestionarioBasico.COLUMNA_T_01 + " text, "
             + TablaCuestionarioBasico.COLUMNA_P_02 + " integer, "
@@ -195,6 +233,48 @@ public class SQLiteOpenHelperBasico extends SQLiteOpenHelper {
             + TablaCuestionarioBasico.COLUMNA_TB_09 + " text, "		// Causa de fallecimiento.
             + TablaCuestionarioBasico.COLUMNA_PB_10 + " integer, "		// Certificado de defunci�n.
             + TablaCuestionarioBasico.COLUMNA_TB_10 + " text, "		// Certificado de defunci�n.
+            + TablaCuestionarioBasico.COLUMNA_MI_01 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_01 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_02 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_02 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_03 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_03 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_04 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_04 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_05 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_05 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_06 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_06 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_07 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_07 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_08 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_08 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_09 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_09 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_10 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_10 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_11 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_11 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_12 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_12 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_13 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_13 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_14 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_14 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_15 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_15 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_16 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_16 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_17 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_17 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_18 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_18 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_19 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_19 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_20 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_20 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_21 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_21 + "text,"
             + TablaCuestionarioBasico.COLUMNA_RE_01 + " integer, "	// Resultado de la entrevista.
             + TablaCuestionarioBasico.COLUMNA_TRE_01 + " text, "	// Resultado de la entrevista.
             + TablaCuestionarioBasico.COLUMNA_FECHA_FIN + " date, "

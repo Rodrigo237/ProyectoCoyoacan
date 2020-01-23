@@ -581,7 +581,8 @@ public class FuenteCuestionarioBasico {
     }
 
     // TabletaPantalla0101 = 2014-11-13
-    public String[] abrirCaptura_0101(String comando_1) {
+    //TabletaSeleccion0101
+    public String[] abrirSeleccion_0101(String comando_1) {
         Cursor cursor = db.rawQuery(comando_1, null);
         cursor.moveToFirst();
 
