@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 import com.iventa.pruebaspsicologia2.bases.FuenteCuestionarioBasico;
 
@@ -32,6 +33,10 @@ public class seleccion extends AppCompatActivity {
     FuenteCuestionarioBasico fuenteCuestionarioBasico;
     String comandoSql;
 
+    RadioGroup radioGroupP1,radioGroupP2,radioGroupP3,radioGroupP4,radioGroupP5;
+    RadioGroup radioGroupP6,radioGroupP7,radioGroupP8,radioGroupP9,radioGroupP10;
+    RadioGroup radioGroupP11,radioGroupP12;
+
     private String seleccion_fecha;
     private String seleccion_hora_ini;
     private String seleccion_fechor_ini;
@@ -39,6 +44,22 @@ public class seleccion extends AppCompatActivity {
     private static String la_tableta;
     private static String el_encuesto;
     private String el_registro;
+    private  String la_cadena;
+    private String el_municipio;
+    private String el_ageb;
+    private String la_area;
+    private String la_manzana;
+    private String la_vivienda;
+    private String el_nombre;
+    private String el_paterno;
+    private String el_materno;
+    private String el_sexo;
+    private String la_edad;
+    private String la_edad_hoy;
+    private String la_fecha;
+    private String hora_inicio;
+    private String fecha_inicio;
+
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +69,18 @@ public class seleccion extends AppCompatActivity {
         seleccion_fecha = "'" + new SimpleDateFormat("yyyy-MM-dd").format(date.getTime()) + "'";
         seleccion_hora_ini = "'" + new SimpleDateFormat("HH:mm:ss").format(date.getTime()) + "'";
 
+        radioGroupP1 = (RadioGroup)findViewById(R.id.radioGroupP1);
+        radioGroupP2 = (RadioGroup)findViewById(R.id.radioGroupP2);
+        radioGroupP3 = (RadioGroup)findViewById(R.id.radioGroupP3);
+        radioGroupP4 = (RadioGroup)findViewById(R.id.radioGroupP4);
+        radioGroupP5 = (RadioGroup)findViewById(R.id.radioGroupP5);
+        radioGroupP6 = (RadioGroup)findViewById(R.id.radioGroupP6);
+        radioGroupP7 = (RadioGroup)findViewById(R.id.radioGroupP7);
+        radioGroupP8 = (RadioGroup)findViewById(R.id.radioGroupP8);
+        radioGroupP9 = (RadioGroup)findViewById(R.id.radioGroupP9);
+        radioGroupP10 = (RadioGroup)findViewById(R.id.radioGroupP10);
+        radioGroupP11 = (RadioGroup)findViewById(R.id.radioGroupP11);
+        radioGroupP12 = (RadioGroup)findViewById(R.id.radioGroupP12);
         bsig = (Button)findViewById(R.id.sigselec);
 
         nunca1 = (RadioButton)findViewById(R.id.nunca1);
@@ -153,13 +186,363 @@ public class seleccion extends AppCompatActivity {
                 "FROM cuestionariobasico " +
                 "WHERE registro = " + "'" + el_registro + "'";
 
-        String matriz[] = fuenteCuestionarioBasico.abrirSeleccion_0101(comando_1);
+        final String matriz[] = fuenteCuestionarioBasico.abrirSeleccion_0101(comando_1);
+        el_registro =				matriz[0].toString();
+        el_municipio =              matriz[1].toString();
+        el_ageb	=           		matriz[2].toString();
+        la_area =       			matriz[3].toString();
+        la_manzana =		        matriz[4].toString();
+        la_vivienda =       		matriz[5].toString();
+        el_nombre =         		matriz[6].toString();
+        el_paterno =        		matriz[7].toString();
+        el_materno =        		matriz[8].toString();
+        el_sexo =       			matriz[9].toString();
+        la_edad   =             	matriz[10].toString();
+        la_edad_hoy =           	matriz[11].toString();
 
+        radioGroupP1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca1:
+                        matriz[12] = "1";
+                        matriz[13] = me_das_tu_ora();
+                        break;
+                    case R.id.muy1:
+                        matriz[12] = "2";
+                        matriz[13] = me_das_tu_ora();
+                        break;
+                    case R.id.algun1:
+                        matriz[12] = "3";
+                        matriz[13] = me_das_tu_ora();
+                        break;
+                    case R.id.casi1:
+                        matriz[12] = "4";
+                        matriz[13] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre1:
+                        matriz[12] = "5";
+                        matriz[13] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca2:
+                        matriz[14] = "1";
+                        matriz[15] = me_das_tu_ora();
+                        break;
+                    case R.id.muy2:
+                        matriz[14] = "2";
+                        matriz[15] = me_das_tu_ora();
+                        break;
+                    case R.id.algun2:
+                        matriz[14] = "3";
+                        matriz[15] = me_das_tu_ora();
+                    case R.id.casi2:
+                        matriz[14] = "4";
+                        matriz[15] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre2:
+                        matriz[14] = "5";
+                        matriz[15] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP3.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca3:
+                        matriz[16] = "1";
+                        matriz[17] = me_das_tu_ora();
+                        break;
+                    case R.id.muy3:
+                        matriz[16] = "2";
+                        matriz[17] = me_das_tu_ora();
+                        break;
+                    case R.id.algun3:
+                        matriz[16] = "3";
+                        matriz[17] = me_das_tu_ora();
+                    case R.id.casi3:
+                        matriz[16] = "4";
+                        matriz[17] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre3:
+                        matriz[16] = "5";
+                        matriz[17] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP4.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca4:
+                        matriz[18] = "1";
+                        matriz[19] = me_das_tu_ora();
+                        break;
+                    case R.id.muy4:
+                        matriz[18] = "2";
+                        matriz[19] = me_das_tu_ora();
+                        break;
+                    case R.id.algun4:
+                        matriz[18] = "3";
+                        matriz[19] = me_das_tu_ora();
+                    case R.id.casi4:
+                        matriz[18] = "4";
+                        matriz[19] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre4:
+                        matriz[18] = "5";
+                        matriz[19] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP5.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca5:
+                        matriz[20] = "1";
+                        matriz[21] = me_das_tu_ora();
+                        break;
+                    case R.id.muy5:
+                        matriz[20] = "2";
+                        matriz[21] = me_das_tu_ora();
+                        break;
+                    case R.id.algun5:
+                        matriz[20] = "3";
+                        matriz[21] = me_das_tu_ora();
+                    case R.id.casi5:
+                        matriz[20] = "4";
+                        matriz[21] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre5:
+                        matriz[20] = "5";
+                        matriz[21] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP6.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca6:
+                        matriz[22] = "1";
+                        matriz[23] = me_das_tu_ora();
+                        break;
+                    case R.id.muy6:
+                        matriz[22] = "2";
+                        matriz[23] = me_das_tu_ora();
+                        break;
+                    case R.id.algun6:
+                        matriz[22] = "3";
+                        matriz[23] = me_das_tu_ora();
+                    case R.id.casi6:
+                        matriz[22] = "4";
+                        matriz[23] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre6:
+                        matriz[22] = "5";
+                        matriz[23] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP7.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca7:
+                        matriz[24] = "1";
+                        matriz[25] = me_das_tu_ora();
+                        break;
+                    case R.id.muy7:
+                        matriz[24] = "2";
+                        matriz[25] = me_das_tu_ora();
+                        break;
+                    case R.id.algun7:
+                        matriz[24] = "3";
+                        matriz[25] = me_das_tu_ora();
+                    case R.id.casi7:
+                        matriz[24] = "4";
+                        matriz[25] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre7:
+                        matriz[24] = "5";
+                        matriz[25] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP8.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca8:
+                        matriz[26] = "1";
+                        matriz[27] = me_das_tu_ora();
+                        break;
+                    case R.id.muy8:
+                        matriz[26] = "2";
+                        matriz[27] = me_das_tu_ora();
+                        break;
+                    case R.id.algun8:
+                        matriz[26] = "3";
+                        matriz[27] = me_das_tu_ora();
+                    case R.id.casi8:
+                        matriz[26] = "4";
+                        matriz[27] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre8:
+                        matriz[26] = "5";
+                        matriz[27] = me_das_tu_ora();
+                        break;
+                }
+            }
+
+        });
+
+        radioGroupP9.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca9:
+                        matriz[28] = "1";
+                        matriz[29] = me_das_tu_ora();
+                        break;
+                    case R.id.muy9:
+                        matriz[28] = "2";
+                        matriz[29] = me_das_tu_ora();
+                        break;
+                    case R.id.algun9:
+                        matriz[28] = "3";
+                        matriz[29] = me_das_tu_ora();
+                    case R.id.casi9:
+                        matriz[28] = "4";
+                        matriz[29] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre9:
+                        matriz[28] = "5";
+                        matriz[29] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP10.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca10:
+                        matriz[30] = "1";
+                        matriz[31] = me_das_tu_ora();
+                        break;
+                    case R.id.muy10:
+                        matriz[30] = "2";
+                        matriz[31] = me_das_tu_ora();
+                        break;
+                    case R.id.algun10:
+                        matriz[30] = "3";
+                        matriz[31] = me_das_tu_ora();
+                    case R.id.casi10:
+                        matriz[30] = "4";
+                        matriz[31] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre10:
+                        matriz[30] = "5";
+                        matriz[31] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP11.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca11:
+                        matriz[32] = "1";
+                        matriz[33] = me_das_tu_ora();
+                        break;
+                    case R.id.muy11:
+                        matriz[32] = "2";
+                        matriz[33] = me_das_tu_ora();
+                        break;
+                    case R.id.algun11:
+                        matriz[32] = "3";
+                        matriz[33] = me_das_tu_ora();
+                    case R.id.casi11:
+                        matriz[32] = "4";
+                        matriz[33] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre11:
+                        matriz[32] = "5";
+                        matriz[33] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
+
+        radioGroupP12.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged (RadioGroup group, int checkedId) {
+                switch (checkedId)
+                {
+                    case R.id.nunca12:
+                        matriz[34] = "1";
+                        matriz[35] = me_das_tu_ora();
+                        break;
+                    case R.id.muy12:
+                        matriz[34] = "2";
+                        matriz[35] = me_das_tu_ora();
+                        break;
+                    case R.id.algun12:
+                        matriz[34] = "3";
+                        matriz[35] = me_das_tu_ora();
+                    case R.id.casi8:
+                        matriz[34] = "4";
+                        matriz[35] = me_das_tu_ora();
+                        break;
+                    case R.id.siempre12:
+                        matriz[34] = "5";
+                        matriz[35] = me_das_tu_ora();
+                        break;
+                }
+            }
+        });
     }
 
 
     public void sigsel(View view){
         Intent selint = new Intent(this,Depresion.class);
+
         startActivity(selint);
     }
 
@@ -170,16 +553,20 @@ public class seleccion extends AppCompatActivity {
         switch (view.getId()){
             case R.id.nunca1:
                 Toast.makeText(this,"1",Toast.LENGTH_LONG).show();
-                comandoSql = "INSERT INTO CuestionarioBasico(COLUMNA_P_01) VALUES(1)";
-                fuenteCuestionarioBasico.abrirSeleccion_0101(comandoSql);
                 break;
             case R.id.muy1:
+                comandoSql = "INSERT INTO CuestionarioBasico(COLUMNA_P_01) VALUES(2)";
+                fuenteCuestionarioBasico.abrirSeleccion_0101(comandoSql);
                 Toast.makeText(this,"2",Toast.LENGTH_LONG).show();
                 break;
             case R.id.algun1:
+                comandoSql = "INSERT INTO CuestionarioBasico(COLUMNA_P_01) VALUES(3)";
+                fuenteCuestionarioBasico.abrirSeleccion_0101(comandoSql);
                 Toast.makeText(this,"3",Toast.LENGTH_LONG).show();
                 break;
             case R.id.casi1:
+                comandoSql = "INSERT INTO CuestionarioBasico(COLUMNA_P_01) VALUES(4)";
+                fuenteCuestionarioBasico.abrirSeleccion_0101(comandoSql);
                 Toast.makeText(this,"4",Toast.LENGTH_LONG).show();
                 break;
             case R.id.siempre1:
@@ -194,6 +581,8 @@ public class seleccion extends AppCompatActivity {
 
         switch (view.getId()){
             case R.id.nunca2:
+                comandoSql = "INSERT INTO CuestionarioBasico(COLUMNA_P_02) VALUES(1)";
+                fuenteCuestionarioBasico.abrirSeleccion_0101(comandoSql);
                 Toast.makeText(this,"1",Toast.LENGTH_LONG).show();
                 break;
             case R.id.muy2:
@@ -390,6 +779,12 @@ public class seleccion extends AppCompatActivity {
             case R.id.siempre12:
                 break;
         }
+    }
+
+    public String me_das_tu_ora() {
+        Date date = new Date();
+        String cadena_la_hora = "'" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date.getTime()) + "'";
+        return cadena_la_hora;
     }
 
 }
