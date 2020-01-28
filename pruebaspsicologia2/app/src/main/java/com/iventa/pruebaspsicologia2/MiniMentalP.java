@@ -1,8 +1,10 @@
 package com.iventa.pruebaspsicologia2;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.CheckBox;
 
 
@@ -42,4 +44,11 @@ public class MiniMentalP extends AppCompatActivity {
             db.execSQL("Insert into CuestionarioBasico(mini1)Values(1)");
     }
 
+    public void miniMentalPAbortar(View view)
+    {
+        Intent miniMAbortar = new Intent(getApplicationContext(),MainActivity.class);
+        miniMAbortar.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        miniMAbortar.putExtra("EXIT",true);
+        startActivity(miniMAbortar);
+    }
 }

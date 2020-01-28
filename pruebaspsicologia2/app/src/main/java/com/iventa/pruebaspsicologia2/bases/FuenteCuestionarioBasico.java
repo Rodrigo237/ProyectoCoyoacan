@@ -609,23 +609,61 @@ public class FuenteCuestionarioBasico {
                                     String comando_01, String fecha_01,
                                     String comando_02, String hora_01,
                                     String comando_03, String fechohora_01,
-                                    String comando_04, String la_latitud_a,
-                                    String comando_05, String la_longitud_a,
-                                    String comando_06, Integer seleccion_01,
-                                    String comando_07, String tiempo_01,
-                                    String comando_08, Integer seleccion_08_15,
-                                    String comando_09, String el_encuesto,
+                                    String comando_04, Integer seleccion_01,
+                                    String comando_05, String tiempo_01,
+                                    String comando_06, Integer seleccion_02,
+                                    String comando_07, String tiempo_02,
+                                    String comando_08, Integer seleccion_03,
+                                    String comando_09,String tiempo_03,
+                                    String comando_10, Integer seleccion_04,
+                                    String comando_11,String tiempo_04,
+                                    String comando_12, Integer seleccion_05,
+                                    String comando_13,String tiempo_05,
+                                    String comando_14, Integer seleccion_06,
+                                    String comando_15,String tiempo_06,
+                                    String comando_16, Integer seleccion_07,
+                                    String comando_17,String tiempo_07,
+                                    String comando_18, Integer seleccion_08,
+                                    String comando_19,String tiempo_08,
+                                    String comando_20, Integer seleccion_09,
+                                    String comando_21,String tiempo_09,
+                                    String comando_22, Integer seleccion_10,
+                                    String comando_23,String tiempo_10,
+                                    String comando_24, Integer seleccion_11,
+                                    String comando_25,String tiempo_11,
+                                    String comando_26, Integer seleccion_12,
+                                    String comando_27,String tiempo_12,
+                                    String comando_28, String el_encuesto,
                                     String comando_50) {
         db.execSQL(comando_00 +
                 comando_01 + fecha_01 +
                 comando_02 + hora_01 +
                 comando_03 + fechohora_01 +
-                comando_04 + la_latitud_a +
-                comando_05 + la_longitud_a +
-                comando_06 + seleccion_01 +
-                comando_07 + tiempo_01 +
-                comando_08 + seleccion_08_15 +
-                comando_09 + el_encuesto +
+                comando_04 + seleccion_01 +
+                comando_05 + tiempo_01 +
+                comando_06 + seleccion_02 +
+                comando_07 + tiempo_02 +
+                comando_08 + seleccion_03 +
+                comando_09 + tiempo_03 +
+                comando_10 + seleccion_04 +
+                comando_11 + tiempo_04 +
+                comando_12 + seleccion_05 +
+                comando_13 + tiempo_05 +
+                comando_14 + seleccion_06 +
+                comando_15 + tiempo_06 +
+                comando_16 + seleccion_07 +
+                comando_17 + tiempo_07 +
+                comando_18 + seleccion_08 +
+                comando_19 + tiempo_08 +
+                comando_20 + seleccion_09 +
+                comando_21 + tiempo_09 +
+                comando_22 + seleccion_10 +
+                comando_23 + tiempo_10 +
+                comando_24 + seleccion_11 +
+                comando_25 + tiempo_11 +
+                comando_26 + seleccion_12 +
+                comando_27 + tiempo_12 +
+                comando_28 + el_encuesto +
                 comando_50
         );
 

@@ -185,4 +185,6 @@
     <string name="negarcontestacion">Se negó a contestar el cuestionario</string>
     <string name="NoSabeRes">No Sabe / No responde</string>
     <string name="Resultado">Resultado del Cuestionario</string>
+    <string name="Abortar">Abortar</string>
+    <string name="TerminarCuestionario">Guardar Cuestionario</string>
 </resources>

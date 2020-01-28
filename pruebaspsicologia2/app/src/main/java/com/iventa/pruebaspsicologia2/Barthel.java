@@ -216,5 +216,12 @@ public class Barthel extends AppCompatActivity {
         }
     }
 
+    public void barthelAbortar(View view){
+        Intent barthelabortar = new Intent(getApplicationContext(),MainActivity.class);
+        barthelabortar.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        barthelabortar.putExtra("EXIT", true);
+        startActivity(barthelabortar);
+
+    }
 
 }

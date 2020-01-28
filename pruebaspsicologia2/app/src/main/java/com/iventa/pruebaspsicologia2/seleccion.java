@@ -59,7 +59,30 @@ public class seleccion extends AppCompatActivity {
     private String la_fecha;
     private String hora_inicio;
     private String fecha_inicio;
-
+    private int seleccion_01;
+    private String tiempo_01;
+    private int seleccion_02;
+    private String tiempo_02;
+    private int seleccion_03;
+    private String tiempo_03;
+    private int seleccion_04;
+    private String tiempo_04;
+    private int seleccion_05;
+    private String tiempo_05;
+    private int seleccion_06;
+    private String tiempo_06;
+    private int seleccion_07;
+    private String tiempo_07;
+    private int seleccion_08;
+    private String tiempo_08;
+    private int seleccion_09;
+    private String tiempo_09;
+    private int seleccion_10;
+    private String tiempo_10;
+    private int seleccion_11;
+    private String tiempo_11;
+    private int seleccion_12;
+    private String tiempo_12;
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -208,22 +231,27 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca1:
                         matriz[12] = "1";
                         matriz[13] = me_das_tu_ora();
+                        seleccion_01 = 1;
                         break;
                     case R.id.muy1:
                         matriz[12] = "2";
                         matriz[13] = me_das_tu_ora();
+                        seleccion_01 = 2;
                         break;
                     case R.id.algun1:
                         matriz[12] = "3";
                         matriz[13] = me_das_tu_ora();
+                        seleccion_01 = 3;
                         break;
                     case R.id.casi1:
                         matriz[12] = "4";
                         matriz[13] = me_das_tu_ora();
+                        seleccion_01 = 4;
                         break;
                     case R.id.siempre1:
                         matriz[12] = "5";
                         matriz[13] = me_das_tu_ora();
+                        seleccion_01 = 5;
                         break;
                 }
             }
@@ -237,21 +265,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca2:
                         matriz[14] = "1";
                         matriz[15] = me_das_tu_ora();
+                        seleccion_02 = 1;
                         break;
                     case R.id.muy2:
                         matriz[14] = "2";
                         matriz[15] = me_das_tu_ora();
+                        seleccion_02 = 2;
                         break;
                     case R.id.algun2:
                         matriz[14] = "3";
                         matriz[15] = me_das_tu_ora();
+                        seleccion_02 = 3;
                     case R.id.casi2:
                         matriz[14] = "4";
                         matriz[15] = me_das_tu_ora();
+                        seleccion_02 = 4;
                         break;
                     case R.id.siempre2:
                         matriz[14] = "5";
                         matriz[15] = me_das_tu_ora();
+                        seleccion_02 = 5;
                         break;
                 }
             }
@@ -265,21 +298,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca3:
                         matriz[16] = "1";
                         matriz[17] = me_das_tu_ora();
+                        seleccion_03 = 1;
                         break;
                     case R.id.muy3:
                         matriz[16] = "2";
                         matriz[17] = me_das_tu_ora();
+                        seleccion_03 = 2;
                         break;
                     case R.id.algun3:
                         matriz[16] = "3";
                         matriz[17] = me_das_tu_ora();
+                        seleccion_03 = 3;
                     case R.id.casi3:
                         matriz[16] = "4";
                         matriz[17] = me_das_tu_ora();
+                        seleccion_03 = 4;
                         break;
                     case R.id.siempre3:
                         matriz[16] = "5";
                         matriz[17] = me_das_tu_ora();
+                        seleccion_03 = 5;
                         break;
                 }
             }
@@ -293,21 +331,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca4:
                         matriz[18] = "1";
                         matriz[19] = me_das_tu_ora();
+                        seleccion_04 = 1;
                         break;
                     case R.id.muy4:
                         matriz[18] = "2";
                         matriz[19] = me_das_tu_ora();
+                        seleccion_04 = 2;
                         break;
                     case R.id.algun4:
                         matriz[18] = "3";
                         matriz[19] = me_das_tu_ora();
+                        seleccion_04 = 3;
                     case R.id.casi4:
                         matriz[18] = "4";
                         matriz[19] = me_das_tu_ora();
+                        seleccion_04 = 4;
                         break;
                     case R.id.siempre4:
                         matriz[18] = "5";
                         matriz[19] = me_das_tu_ora();
+                        seleccion_04 = 5;
                         break;
                 }
             }
@@ -321,21 +364,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca5:
                         matriz[20] = "1";
                         matriz[21] = me_das_tu_ora();
+                        seleccion_05 = 1;
                         break;
                     case R.id.muy5:
                         matriz[20] = "2";
                         matriz[21] = me_das_tu_ora();
+                        seleccion_05 = 2;
                         break;
                     case R.id.algun5:
                         matriz[20] = "3";
                         matriz[21] = me_das_tu_ora();
+                        seleccion_05 = 3;
                     case R.id.casi5:
                         matriz[20] = "4";
                         matriz[21] = me_das_tu_ora();
+                        seleccion_05 = 4;
                         break;
                     case R.id.siempre5:
                         matriz[20] = "5";
                         matriz[21] = me_das_tu_ora();
+                        seleccion_05 = 5;
                         break;
                 }
             }
@@ -349,21 +397,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca6:
                         matriz[22] = "1";
                         matriz[23] = me_das_tu_ora();
+                        seleccion_06 = 1;
                         break;
                     case R.id.muy6:
                         matriz[22] = "2";
                         matriz[23] = me_das_tu_ora();
+                        seleccion_06 = 2;
                         break;
                     case R.id.algun6:
                         matriz[22] = "3";
                         matriz[23] = me_das_tu_ora();
+                        seleccion_06 = 3;
                     case R.id.casi6:
                         matriz[22] = "4";
                         matriz[23] = me_das_tu_ora();
+                        seleccion_06 = 4;
                         break;
                     case R.id.siempre6:
                         matriz[22] = "5";
                         matriz[23] = me_das_tu_ora();
+                        seleccion_06 = 5;
                         break;
                 }
             }
@@ -377,21 +430,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca7:
                         matriz[24] = "1";
                         matriz[25] = me_das_tu_ora();
+                        seleccion_07 = 1;
                         break;
                     case R.id.muy7:
                         matriz[24] = "2";
                         matriz[25] = me_das_tu_ora();
+                        seleccion_07 = 2;
                         break;
                     case R.id.algun7:
                         matriz[24] = "3";
                         matriz[25] = me_das_tu_ora();
+                        seleccion_07 = 3;
                     case R.id.casi7:
                         matriz[24] = "4";
                         matriz[25] = me_das_tu_ora();
+                        seleccion_07 = 4;
                         break;
                     case R.id.siempre7:
                         matriz[24] = "5";
                         matriz[25] = me_das_tu_ora();
+                        seleccion_07 = 5;
                         break;
                 }
             }
@@ -405,21 +463,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca8:
                         matriz[26] = "1";
                         matriz[27] = me_das_tu_ora();
+                        seleccion_08 = 1;
                         break;
                     case R.id.muy8:
                         matriz[26] = "2";
                         matriz[27] = me_das_tu_ora();
+                        seleccion_08 = 2;
                         break;
                     case R.id.algun8:
                         matriz[26] = "3";
                         matriz[27] = me_das_tu_ora();
+                        seleccion_08 = 3;
                     case R.id.casi8:
                         matriz[26] = "4";
                         matriz[27] = me_das_tu_ora();
+                        seleccion_08 = 4;
                         break;
                     case R.id.siempre8:
                         matriz[26] = "5";
                         matriz[27] = me_das_tu_ora();
+                        seleccion_08 = 5;
                         break;
                 }
             }
@@ -434,21 +497,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca9:
                         matriz[28] = "1";
                         matriz[29] = me_das_tu_ora();
+                        seleccion_09 = 1;
                         break;
                     case R.id.muy9:
                         matriz[28] = "2";
                         matriz[29] = me_das_tu_ora();
+                        seleccion_09 = 2;
                         break;
                     case R.id.algun9:
                         matriz[28] = "3";
                         matriz[29] = me_das_tu_ora();
+                        seleccion_09 = 3;
                     case R.id.casi9:
                         matriz[28] = "4";
                         matriz[29] = me_das_tu_ora();
+                        seleccion_09 = 4;
                         break;
                     case R.id.siempre9:
                         matriz[28] = "5";
                         matriz[29] = me_das_tu_ora();
+                        seleccion_09 = 5;
                         break;
                 }
             }
@@ -462,21 +530,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca10:
                         matriz[30] = "1";
                         matriz[31] = me_das_tu_ora();
+                        seleccion_10 = 1;
                         break;
                     case R.id.muy10:
                         matriz[30] = "2";
                         matriz[31] = me_das_tu_ora();
+                        seleccion_10 = 2;
                         break;
                     case R.id.algun10:
                         matriz[30] = "3";
                         matriz[31] = me_das_tu_ora();
+                        seleccion_10 = 3;
                     case R.id.casi10:
                         matriz[30] = "4";
                         matriz[31] = me_das_tu_ora();
+                        seleccion_10 = 4;
                         break;
                     case R.id.siempre10:
                         matriz[30] = "5";
                         matriz[31] = me_das_tu_ora();
+                        seleccion_10 = 5;
                         break;
                 }
             }
@@ -490,21 +563,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca11:
                         matriz[32] = "1";
                         matriz[33] = me_das_tu_ora();
+                        seleccion_11 = 1;
                         break;
                     case R.id.muy11:
                         matriz[32] = "2";
                         matriz[33] = me_das_tu_ora();
+                        seleccion_11 = 2;
                         break;
                     case R.id.algun11:
                         matriz[32] = "3";
                         matriz[33] = me_das_tu_ora();
+                        seleccion_11 = 3;
                     case R.id.casi11:
                         matriz[32] = "4";
                         matriz[33] = me_das_tu_ora();
+                        seleccion_11 = 4;
                         break;
                     case R.id.siempre11:
                         matriz[32] = "5";
                         matriz[33] = me_das_tu_ora();
+                        seleccion_11 = 5;
                         break;
                 }
             }
@@ -518,21 +596,26 @@ public class seleccion extends AppCompatActivity {
                     case R.id.nunca12:
                         matriz[34] = "1";
                         matriz[35] = me_das_tu_ora();
+                        seleccion_12 = 1;
                         break;
                     case R.id.muy12:
                         matriz[34] = "2";
                         matriz[35] = me_das_tu_ora();
+                        seleccion_12 = 2;
                         break;
                     case R.id.algun12:
                         matriz[34] = "3";
                         matriz[35] = me_das_tu_ora();
+                        seleccion_12 = 3;
                     case R.id.casi8:
                         matriz[34] = "4";
                         matriz[35] = me_das_tu_ora();
+                        seleccion_12 = 4;
                         break;
                     case R.id.siempre12:
                         matriz[34] = "5";
                         matriz[35] = me_das_tu_ora();
+                        seleccion_12 = 5;
                         break;
                 }
             }
@@ -542,7 +625,70 @@ public class seleccion extends AppCompatActivity {
 
     public void sigsel(View view){
         Intent selint = new Intent(this,Depresion.class);
+        fuenteCuestionarioBasico = new FuenteCuestionarioBasico(this);
+        fuenteCuestionarioBasico.open();
 
+        String comando_00 = "UPDATE cuestionariobasico SET";
+        String comando_01 = "  fecha = ";
+        String comando_02 = ", hora_ini = ";
+        String comando_03 = ", fechor_ini = ";
+        String comando_04 = ", p_01 = ";
+        String comando_05 = ", t_01 = ";
+        String comando_06 = ", p_02 = ";
+        String comando_07 = ", t_02 = ";
+        String comando_08 = ", p_03 = ";
+        String comando_09 = ", t_03 = ";
+        String comando_10 = ", psbp_01 = ";
+        String comando_11 = ", tpsbp_01 = ";
+        String comando_12 = ", psbp_02 = ";
+        String comando_13 = ", tpsbp_02 = ";
+        String comando_14 = ", psbp_03 = ";
+        String comando_15 = ", tpsbp_03 = ";
+        String comando_16 = ", pse_01 = ";
+        String comando_17 = ", tpse_01 = ";
+        String comando_18 = ", pse_02= ";
+        String comando_19 = ", tpse_02 = ";
+        String comando_20 = ", pse_03 = ";
+        String comando_21 = ", tpse_03 = ";
+        String comando_22 = ", pc_01 = ";
+        String comando_23 = ", tpc_01 = ";
+        String comando_24 = ", pc_02 = ";
+        String comando_25 = ", tpc_02 = ";
+        String comando_26 = ", pc_03 = ";
+        String comando_27 = ", tpc_03 = ";
+        String comando_28 = ", encuesto = ";
+        String comando_50 = " WHERE registro = " + "'" + el_registro + "'";
+
+        fuenteCuestionarioBasico.guardarCaptura_0101(comando_00,
+                 comando_01,  seleccion_fecha,
+                 comando_02,  seleccion_hora_ini,
+                 comando_03,  seleccion_fechor_ini,
+                 comando_04,  seleccion_01,
+                 comando_05,  tiempo_01,
+                 comando_06, seleccion_02,
+                 comando_07, tiempo_02,
+                 comando_08,  seleccion_03,
+                 comando_09, tiempo_03,
+                 comando_10, seleccion_04,
+                 comando_11, tiempo_04,
+                 comando_12,  seleccion_05,
+                 comando_13, tiempo_05,
+                 comando_14,  seleccion_06,
+                 comando_15, tiempo_06,
+                 comando_16,  seleccion_07,
+                 comando_17, tiempo_07,
+                 comando_18,  seleccion_08,
+                 comando_19, tiempo_08,
+                 comando_20,  seleccion_09,
+                 comando_21, tiempo_09,
+                 comando_22,  seleccion_10,
+                 comando_23, tiempo_10,
+                 comando_24,  seleccion_11,
+                 comando_25, tiempo_11,
+                 comando_26,  seleccion_12,
+                 comando_27, tiempo_12,
+                 comando_28, "'" + el_encuesto + "'",
+                 comando_50);
         startActivity(selint);
     }
 
@@ -785,6 +931,78 @@ public class seleccion extends AppCompatActivity {
         Date date = new Date();
         String cadena_la_hora = "'" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date.getTime()) + "'";
         return cadena_la_hora;
+    }
+
+    public void abortarSeleccion(View view)
+    {
+        Intent abortarSelec = new Intent(getApplicationContext(),MainActivity.class);
+        fuenteCuestionarioBasico = new FuenteCuestionarioBasico(this);
+        fuenteCuestionarioBasico.open();
+
+        String comando_00 = "UPDATE cuestionariobasico SET";
+        String comando_01 = "  fecha = ";
+        String comando_02 = ", hora_ini = ";
+        String comando_03 = ", fechor_ini = ";
+        String comando_04 = ", p_01 = ";
+        String comando_05 = ", t_01 = ";
+        String comando_06 = ", p_02 = ";
+        String comando_07 = ", t_02 = ";
+        String comando_08 = ", p_03 = ";
+        String comando_09 = ", t_03 = ";
+        String comando_10 = ", psbp_01 = ";
+        String comando_11 = ", tpsbp_01 = ";
+        String comando_12 = ", psbp_02 = ";
+        String comando_13 = ", tpsbp_02 = ";
+        String comando_14 = ", psbp_03 = ";
+        String comando_15 = ", tpsbp_03 = ";
+        String comando_16 = ", pse_01 = ";
+        String comando_17 = ", tpse_01 = ";
+        String comando_18 = ", pse_02= ";
+        String comando_19 = ", tpse_02 = ";
+        String comando_20 = ", pse_03 = ";
+        String comando_21 = ", tpse_03 = ";
+        String comando_22 = ", pc_01 = ";
+        String comando_23 = ", tpc_01 = ";
+        String comando_24 = ", pc_02 = ";
+        String comando_25 = ", tpc_02 = ";
+        String comando_26 = ", pc_03 = ";
+        String comando_27 = ", tpc_03 = ";
+        String comando_28 = ", encuesto = ";
+        String comando_50 = " WHERE registro = " + "'" + el_registro + "'";
+
+        fuenteCuestionarioBasico.guardarCaptura_0101(comando_00,
+                comando_01,  seleccion_fecha,
+                comando_02,  seleccion_hora_ini,
+                comando_03,  seleccion_fechor_ini,
+                comando_04,  seleccion_01,
+                comando_05,  tiempo_01,
+                comando_06, seleccion_02,
+                comando_07, tiempo_02,
+                comando_08,  seleccion_03,
+                comando_09, tiempo_03,
+                comando_10, seleccion_04,
+                comando_11, tiempo_04,
+                comando_12,  seleccion_05,
+                comando_13, tiempo_05,
+                comando_14,  seleccion_06,
+                comando_15, tiempo_06,
+                comando_16,  seleccion_07,
+                comando_17, tiempo_07,
+                comando_18,  seleccion_08,
+                comando_19, tiempo_08,
+                comando_20,  seleccion_09,
+                comando_21, tiempo_09,
+                comando_22,  seleccion_10,
+                comando_23, tiempo_10,
+                comando_24,  seleccion_11,
+                comando_25, tiempo_11,
+                comando_26,  seleccion_12,
+                comando_27, tiempo_12,
+                comando_28, "'" + el_encuesto + "'",
+                comando_50);
+        abortarSelec.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        abortarSelec.putExtra("EXIT",true);
+        startActivity(abortarSelec);
     }
 
 }

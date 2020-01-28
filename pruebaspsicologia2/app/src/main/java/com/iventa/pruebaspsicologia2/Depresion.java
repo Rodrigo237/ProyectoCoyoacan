@@ -176,4 +176,11 @@ public class Depresion extends AppCompatActivity {
         }
     }
 
+    public void depresionAbortar(View view)
+    {
+        Intent depreabortar = new Intent(getApplicationContext(),MainActivity.class);
+        depreabortar.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        depreabortar.putExtra("EXIT",true);
+        startActivity(depreabortar);
+    }
 }
