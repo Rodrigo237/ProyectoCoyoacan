@@ -116,20 +116,42 @@ public class SQLiteOpenHelperBasico extends SQLiteOpenHelper {
         public static String COLUMNA_TMI_10 = "tmi_10";
         public static String COLUMNA_MI_11 = "mi_11";
         public static String COLUMNA_TMI_11 = "tmi_11";
-        public static String COLUMNA_MI_12 = "mi_12";
-        public static String COLUMNA_TMI_12 = "tmi_12";
-        public static String COLUMNA_MI_13 = "mi_13";
-        public static String COLUMNA_TMI_13 = "tmi_13";
+        public static String COLUMNA_MI_12R1 = "mi_12r1";
+        public static String COLUMNA_TMI_12R1 = "tmi_12r1";
+        public static String COLUMNA_MI_12R2 = "mi_12r2";
+        public  static String COLUMNA_TMI_12R2 = "tmi_12r2";
+        public static String COLUMNA_MI_12R3 = "mi_12r3";
+        public static String COLUMNA_TMI_12R3 ="tmi_12r3";
+        public static String COLUMNA_MI_13R1 = "mi_13r1";
+        public static String COLUMNA_TMI_13R1 = "tmi_13r1";
+        public static String COLUMNA_MI_13R2 = "mi_13r2";
+        public static String COLUMNA_TMI_13R2 = "tmi_13r2";
+        public static String COLUMNA_MI_13R3 = "mi_13r3";
+        public static String COLUMNA_TMI_13R3 = "tmi_13r3";
+        public static String COLUMNA_MI_13R4 = "mi_13r4";
+        public static String COLUMNA_TMI_13R4 = "tmi_13r4";
+        public static String COLUMNA_MI_13R5 = "mi_13r5";
+        public static String COLUMNA_TMI_13R5 = "tmi_13r5";
         public static String COLUMNA_MI_14 = "mi_14";
         public static String COLUMNA_TMI_14 = "tmi_14";
-        public static String COLUMNA_MI_15 = "mi_15";
-        public static String COLUMNA_TMI_15 = "tmi_15";
-        public static String COLUMNA_MI_16 = "mi_16";
-        public static String COLUMNA_TMI_16 = "tmi_16";
+        public static String COLUMNA_MI_15R1 = "mi_15r1";
+        public static String COLUMNA_TMI_15R1 = "tmi_15r1";
+        public static String COLUMNA_MI_15R2 = "mi_15r2";
+        public static String COLUMNA_TMI_15R2 = "tmi_15r2";
+        public static String COLUMNA_MI_15R3 = "mi_15r3";
+        public static String COLUMNA_TMI_15R3 = "tmi_15r3";
+        public static String COLUMNA_MI_16R1 = "mi_16r1";
+        public static String COLUMNA_TMI_16R1 = "tmi_16r1";
+        public static String COLUMNA_MI_16R2 = "mi_16r2";
+        public static String COLUMNA_TMI_16R2 = "tmi_16r2";
         public static String COLUMNA_MI_17 = "mi_17";
         public static String COLUMNA_TMI_17 = "tmi_17";
-        public static String COLUMNA_MI_18 = "mi_18";
-        public static String COLUMNA_TMI_18 = "tmi_18";
+        public static String COLUMNA_MI_18R1 = "mi_18r1";
+        public static String COLUMNA_TMI_18R1 = "tmi_18r1";
+        public static String COLUMNA_MI_18R2 = "mi_18r2";
+        public static String COLUMNA_TMI_18R2 = "tmi_18r2";
+        public static String COLUMNA_MI_18R3 = "mi_18r3";
+        public static String COLUMNA_TMI_18R3 = "tmi_18r3";
         public static String COLUMNA_MI_19 = "mi_19";
         public static String COLUMNA_TMI_19 = "tmi_19";
         public static String COLUMNA_MI_20 = "mi_20";
@@ -255,20 +277,42 @@ public class SQLiteOpenHelperBasico extends SQLiteOpenHelper {
             + TablaCuestionarioBasico.COLUMNA_TMI_10 + "text,"
             + TablaCuestionarioBasico.COLUMNA_MI_11 + "integer,"
             + TablaCuestionarioBasico.COLUMNA_TMI_11 + "text,"
-            + TablaCuestionarioBasico.COLUMNA_MI_12 + "integer,"
-            + TablaCuestionarioBasico.COLUMNA_TMI_12 + "text,"
-            + TablaCuestionarioBasico.COLUMNA_MI_13 + "integer,"
-            + TablaCuestionarioBasico.COLUMNA_TMI_13 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_12R1 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_12R1 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_12R2 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_12R2 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_12R3 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_12R3 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_13R1 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_13R1 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_13R2 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_13R2 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_13R3 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_13R3 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_13R4 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_13R4 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_13R5 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_13R5 + "text,"
             + TablaCuestionarioBasico.COLUMNA_MI_14 + "integer,"
             + TablaCuestionarioBasico.COLUMNA_TMI_14 + "text,"
-            + TablaCuestionarioBasico.COLUMNA_MI_15 + "integer,"
-            + TablaCuestionarioBasico.COLUMNA_TMI_15 + "text,"
-            + TablaCuestionarioBasico.COLUMNA_MI_16 + "integer,"
-            + TablaCuestionarioBasico.COLUMNA_TMI_16 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_15R1 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_15R1 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_15R2 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_15R2 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_15R3 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_15R3 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_16R1 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_16R1 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_16R2 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_16R2 + "text,"
             + TablaCuestionarioBasico.COLUMNA_MI_17 + "integer,"
             + TablaCuestionarioBasico.COLUMNA_TMI_17 + "text,"
-            + TablaCuestionarioBasico.COLUMNA_MI_18 + "integer,"
-            + TablaCuestionarioBasico.COLUMNA_TMI_18 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_18R1 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_18R1 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_18R2 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_18R2 + "text,"
+            + TablaCuestionarioBasico.COLUMNA_MI_18R3 + "integer,"
+            + TablaCuestionarioBasico.COLUMNA_TMI_18R3 + "text,"
             + TablaCuestionarioBasico.COLUMNA_MI_19 + "integer,"
             + TablaCuestionarioBasico.COLUMNA_TMI_19 + "text,"
             + TablaCuestionarioBasico.COLUMNA_MI_20 + "integer,"

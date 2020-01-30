@@ -39,7 +39,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <RadioGroup
-                android:id="@+id/radioGroup20"
+                android:id="@+id/radioGroupP20"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -81,10 +81,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup20" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP20" />
 
             <RadioGroup
-                android:id="@+id/radioGroup21"
+                android:id="@+id/radioGroupP21"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -133,10 +133,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup21" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP21" />
 
             <RadioGroup
-                android:id="@+id/radioGroup22"
+                android:id="@+id/radioGroupP22"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -178,10 +178,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup22" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP22" />
 
             <RadioGroup
-                android:id="@+id/radioGroup23"
+                android:id="@+id/radioGroupP23"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -230,10 +230,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup23" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP23" />
 
             <RadioGroup
-                android:id="@+id/radioGroup24"
+                android:id="@+id/radioGroupP24"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -282,10 +282,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup24" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP24" />
 
             <RadioGroup
-                android:id="@+id/radioGroup25"
+                android:id="@+id/radioGroupP25"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -334,10 +334,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup25" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP25" />
 
             <RadioGroup
-                android:id="@+id/radioGroup26"
+                android:id="@+id/radioGroupP26"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -393,10 +393,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup26" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP26" />
 
             <RadioGroup
-                android:id="@+id/radioGroup27"
+                android:id="@+id/radioGroupP27"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -445,10 +445,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup27" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP27" />
 
             <RadioGroup
-                android:id="@+id/radioGroup28"
+                android:id="@+id/radioGroupP28"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -497,10 +497,10 @@
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup28" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP28" />
 
             <RadioGroup
-                android:id="@+id/radioGroup29"
+                android:id="@+id/radioGroupP29"
                 android:layout_width="0dp"
                 android:layout_height="111dp"
                 android:layout_marginStart="16dp"
@@ -550,7 +550,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/abortarbutton2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup29" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP29" />
 
             <Button
                 android:id="@+id/abortarbutton2"
@@ -568,7 +568,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/siguienteBarbutton"
-                app:layout_constraintTop_toBottomOf="@+id/radioGroup29" />
+                app:layout_constraintTop_toBottomOf="@+id/radioGroupP29" />
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 

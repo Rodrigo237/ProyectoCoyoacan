@@ -450,6 +450,7 @@
                 android:layout_marginEnd="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="24dp"
+                android:onClick="miniSiguienteP"
                 android:text="@string/siguiente"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
