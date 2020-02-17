@@ -32,7 +32,6 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:onClick="iniciar"
         android:text="@string/Iniciar"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

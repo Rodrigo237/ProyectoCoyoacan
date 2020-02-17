@@ -75,7 +75,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta1"
                     android:text="@string/res1"
                     android:textSize="16sp" />
 
@@ -84,7 +83,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta1"
                     android:text="@string/res2"
                     android:textSize="16sp" />
 
@@ -93,7 +91,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta1"
                     android:text="@string/res3"
                     android:textSize="16sp" />
 
@@ -102,7 +99,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta1"
                     android:text="@string/res4"
                     android:textSize="16sp" />
 
@@ -111,7 +107,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta1"
                     android:text="@string/res5"
                     android:textSize="16sp" />
             </RadioGroup>
@@ -152,7 +147,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta2"
                     android:text="@string/res1"
                     android:textSize="16sp" />
 
@@ -161,7 +155,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta2"
                     android:text="@string/res2"
                     android:textSize="16sp" />
 
@@ -170,7 +163,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta2"
                     android:text="@string/res3"
                     android:textSize="16sp" />
 
@@ -179,7 +171,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta2"
                     android:text="@string/res4"
                     android:textSize="16sp" />
 
@@ -188,7 +179,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="pregunta2"
                     android:text="@string/res5"
                     android:textSize="16sp" />
             </RadioGroup>

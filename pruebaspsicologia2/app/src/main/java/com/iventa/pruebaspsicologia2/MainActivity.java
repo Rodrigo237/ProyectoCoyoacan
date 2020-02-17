@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Selection;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,6 +15,7 @@ import com.iventa.pruebaspsicologia2.R.layout;
 public class MainActivity extends Activity {
 
     private Button button;
+    Button Iniciar;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -21,12 +23,21 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         button = (Button) findViewById(R.id.escuestador);
+        Iniciar = (Button)findViewById(R.id.iniciarc);
+
+        Iniciar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View v) {
+                Intent init = new Intent(getApplicationContext(), seleccion.class);
+                startActivity(init);
+            }
+        });
     }
 
-    public void iniciar(View view){
-        Intent inicia = new Intent(this, seleccion.class);
-        startActivity(inicia);
-    }
+   /* public void Cuestionario(View view){
+        Intent init_cuestionario = new Intent(this, seleccion.class);
+        startActivity(init_cuestionario);
+    }*/
 
     public void encuestadores(View view){
         Intent encues = new Intent(this, encuestadores.class);
