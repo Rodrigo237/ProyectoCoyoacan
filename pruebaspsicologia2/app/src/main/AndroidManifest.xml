@@ -24,7 +24,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MiniMentalS"></activity>
+        <activity android:name=".seleccion_segundo"></activity>
+        <activity android:name=".MiniMentalS" />
         <activity android:name=".MiniMentalP" />
         <activity android:name=".BuscarCuestionarios" />
         <activity android:name=".terminacion" />

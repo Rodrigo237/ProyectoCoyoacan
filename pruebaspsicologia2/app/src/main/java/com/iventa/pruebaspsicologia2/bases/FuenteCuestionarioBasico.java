@@ -594,8 +594,7 @@ public class FuenteCuestionarioBasico {
                 cursor.getString(16),cursor.getString(17),cursor.getString(18),cursor.getString(19),
                 cursor.getString(20),cursor.getString(21),cursor.getString(22),cursor.getString(23),
                 cursor.getString(24),cursor.getString(25),cursor.getString(26),cursor.getString(27),
-                cursor.getString(28),cursor.getString(29),cursor.getString(30),cursor.getString(31),
-                cursor.getString(32),cursor.getString(33),cursor.getString(34),cursor.getString(35)
+                cursor.getString(28),cursor.getString(29)
         };
 
         cursor.close();
@@ -627,12 +626,6 @@ public class FuenteCuestionarioBasico {
                                     String comando_19,String tiempo_08,
                                     String comando_20, Integer seleccion_09,
                                     String comando_21,String tiempo_09,
-                                    String comando_22, Integer seleccion_10,
-                                    String comando_23,String tiempo_10,
-                                    String comando_24, Integer seleccion_11,
-                                    String comando_25,String tiempo_11,
-                                    String comando_26, Integer seleccion_12,
-                                    String comando_27,String tiempo_12,
                                     String comando_28, String el_encuesto,
                                     String comando_50) {
         db.execSQL(comando_00 +
@@ -657,17 +650,56 @@ public class FuenteCuestionarioBasico {
                 comando_19 + tiempo_08 +
                 comando_20 + seleccion_09 +
                 comando_21 + tiempo_09 +
-                comando_22 + seleccion_10 +
-                comando_23 + tiempo_10 +
-                comando_24 + seleccion_11 +
-                comando_25 + tiempo_11 +
-                comando_26 + seleccion_12 +
-                comando_27 + tiempo_12 +
                 comando_28 + el_encuesto +
                 comando_50
         );
 
         db.close();
+    }
+
+    //TabletaPantalla010101
+
+    public String[] abrirSeleccion_010101(String comando_1)
+    {
+        Cursor cursor = db.rawQuery(comando_1,null);
+        cursor.moveToFirst();
+
+        String[] lamatriz =
+                {
+                        cursor.getString(0), cursor.getString(1),cursor.getString(2),cursor.getString(3),
+                        cursor.getString(4),cursor.getString(5),cursor.getString(6),cursor.getString(7),
+                        cursor.getString(8),cursor.getString(9),cursor.getString(10),cursor.getString(11),
+                        cursor.getString(12)
+                };
+        cursor.close();
+        return lamatriz;
+    }
+
+    public void guardarCaptura_010101(String comando_00,
+                                      String comando_01, String fecha_01,
+                                      String comando_02, String hora_01,
+                                      String comando_03, String fechohora_01,
+                                      String comando_04, Integer seleccion_10,
+                                      String comando_05, String tiempo_10,
+                                      String comando_06, Integer seleccion_11,
+                                      String comando_07, String tiempo_11,
+                                      String comando_08, Integer seleccion_12,
+                                      String comando_09, String tiempo_12,
+                                      String comando_28, String el_encuesto,
+                                      String comando_50)
+    {
+        db.execSQL(comando_00 +
+                comando_01 + fecha_01 +
+                comando_02 + hora_01 +
+                comando_03 + fechohora_01 +
+                comando_04 + seleccion_10 +
+                comando_05 + tiempo_10 +
+                comando_06 + seleccion_11 +
+                comando_07 + tiempo_11 +
+                comando_08 +seleccion_12 +
+                comando_09 + tiempo_12 +
+                comando_28 + el_encuesto +
+                comando_50);
     }
 
     // TabletaPantalla0102 = 2014-03-29

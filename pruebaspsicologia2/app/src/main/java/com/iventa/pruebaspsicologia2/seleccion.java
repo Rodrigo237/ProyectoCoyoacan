@@ -26,16 +26,13 @@ public class seleccion extends AppCompatActivity {
     RadioButton  nunca7,muy7,algun7,casi7,siempre7;
     RadioButton  nunca8,muy8,algun8,casi8,siempre8;
     RadioButton  nunca9,muy9,algun9,casi9,siempre9;
-    RadioButton  nunca10,muy10,algun10,casi10,siempre10;
-    RadioButton  nunca11,muy11,algun11,casi11,siempre11;
-    RadioButton  nunca12,muy12,algun12,casi12,siempre12;
+
     private SQLiteDatabase db;
     FuenteCuestionarioBasico fuenteCuestionarioBasico;
     String comandoSql;
 
     RadioGroup radioGroupP1,radioGroupP2,radioGroupP3,radioGroupP4,radioGroupP5;
-    RadioGroup radioGroupP6,radioGroupP7,radioGroupP8,radioGroupP9,radioGroupP10;
-    RadioGroup radioGroupP11,radioGroupP12;
+    RadioGroup radioGroupP6,radioGroupP7,radioGroupP8,radioGroupP9;
 
     private String seleccion_fecha;
     private String seleccion_hora_ini;
@@ -77,12 +74,6 @@ public class seleccion extends AppCompatActivity {
     private String tiempo_08;
     private int seleccion_09;
     private String tiempo_09;
-    private int seleccion_10;
-    private String tiempo_10;
-    private int seleccion_11;
-    private String tiempo_11;
-    private int seleccion_12;
-    private String tiempo_12;
     @Override
     protected void onCreate (Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,9 +92,7 @@ public class seleccion extends AppCompatActivity {
         radioGroupP7 = (RadioGroup)findViewById(R.id.radioGroupP7);
         radioGroupP8 = (RadioGroup)findViewById(R.id.radioGroupP8);
         radioGroupP9 = (RadioGroup)findViewById(R.id.radioGroupP9);
-        radioGroupP10 = (RadioGroup)findViewById(R.id.radioGroupP10);
-        radioGroupP11 = (RadioGroup)findViewById(R.id.radioGroupP11);
-        radioGroupP12 = (RadioGroup)findViewById(R.id.radioGroupP12);
+
         bsig = (Button)findViewById(R.id.sigselec);
 
         nunca1 = (RadioButton)findViewById(R.id.nunca1);
@@ -160,23 +149,7 @@ public class seleccion extends AppCompatActivity {
         casi9 = (RadioButton)findViewById(R.id.casi9);
         siempre9 = (RadioButton)findViewById(R.id.siempre9);
 
-        nunca10 = (RadioButton)findViewById(R.id.nunca10);
-        muy10  = (RadioButton)findViewById(R.id.muy10);
-        algun10 = (RadioButton)findViewById(R.id.algun10);
-        casi10 = (RadioButton)findViewById(R.id.casi10);
-        siempre10 = (RadioButton)findViewById(R.id.siempre10);
 
-        nunca11 = (RadioButton)findViewById(R.id.nunca11);
-        muy11  = (RadioButton)findViewById(R.id.muy11);
-        algun11 = (RadioButton)findViewById(R.id.algun11);
-        casi11 = (RadioButton)findViewById(R.id.casi11);
-        siempre11 = (RadioButton)findViewById(R.id.siempre11);
-
-        nunca12 = (RadioButton)findViewById(R.id.nunca12);
-        muy12  = (RadioButton)findViewById(R.id.muy12);
-        algun12 = (RadioButton)findViewById(R.id.algun12);
-        casi12 = (RadioButton)findViewById(R.id.casi12);
-        siempre12 = (RadioButton)findViewById(R.id.siempre12);
 
         fuenteCuestionarioBasico = new FuenteCuestionarioBasico(this);
         fuenteCuestionarioBasico.open();
@@ -522,109 +495,12 @@ public class seleccion extends AppCompatActivity {
             }
         });
 
-        radioGroupP10.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged (RadioGroup group, int checkedId) {
-                switch (checkedId)
-                {
-                    case R.id.nunca10:
-                        matriz[30] = "1";
-                        matriz[31] = me_das_tu_ora();
-                        seleccion_10 = 1;
-                        break;
-                    case R.id.muy10:
-                        matriz[30] = "2";
-                        matriz[31] = me_das_tu_ora();
-                        seleccion_10 = 2;
-                        break;
-                    case R.id.algun10:
-                        matriz[30] = "3";
-                        matriz[31] = me_das_tu_ora();
-                        seleccion_10 = 3;
-                    case R.id.casi10:
-                        matriz[30] = "4";
-                        matriz[31] = me_das_tu_ora();
-                        seleccion_10 = 4;
-                        break;
-                    case R.id.siempre10:
-                        matriz[30] = "5";
-                        matriz[31] = me_das_tu_ora();
-                        seleccion_10 = 5;
-                        break;
-                }
-            }
-        });
 
-        radioGroupP11.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged (RadioGroup group, int checkedId) {
-                switch (checkedId)
-                {
-                    case R.id.nunca11:
-                        matriz[32] = "1";
-                        matriz[33] = me_das_tu_ora();
-                        seleccion_11 = 1;
-                        break;
-                    case R.id.muy11:
-                        matriz[32] = "2";
-                        matriz[33] = me_das_tu_ora();
-                        seleccion_11 = 2;
-                        break;
-                    case R.id.algun11:
-                        matriz[32] = "3";
-                        matriz[33] = me_das_tu_ora();
-                        seleccion_11 = 3;
-                    case R.id.casi11:
-                        matriz[32] = "4";
-                        matriz[33] = me_das_tu_ora();
-                        seleccion_11 = 4;
-                        break;
-                    case R.id.siempre11:
-                        matriz[32] = "5";
-                        matriz[33] = me_das_tu_ora();
-                        seleccion_11 = 5;
-                        break;
-                }
-            }
-        });
-
-        radioGroupP12.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged (RadioGroup group, int checkedId) {
-                switch (checkedId)
-                {
-                    case R.id.nunca12:
-                        matriz[34] = "1";
-                        matriz[35] = me_das_tu_ora();
-                        seleccion_12 = 1;
-                        break;
-                    case R.id.muy12:
-                        matriz[34] = "2";
-                        matriz[35] = me_das_tu_ora();
-                        seleccion_12 = 2;
-                        break;
-                    case R.id.algun12:
-                        matriz[34] = "3";
-                        matriz[35] = me_das_tu_ora();
-                        seleccion_12 = 3;
-                    case R.id.casi8:
-                        matriz[34] = "4";
-                        matriz[35] = me_das_tu_ora();
-                        seleccion_12 = 4;
-                        break;
-                    case R.id.siempre12:
-                        matriz[34] = "5";
-                        matriz[35] = me_das_tu_ora();
-                        seleccion_12 = 5;
-                        break;
-                }
-            }
-        });
     }
 
 
     public void sigsel(View view){
-        Intent selint = new Intent(this,Depresion.class);
+        Intent selint = new Intent(this,seleccion_segundo.class);
         fuenteCuestionarioBasico = new FuenteCuestionarioBasico(this);
         fuenteCuestionarioBasico.open();
 
@@ -650,12 +526,6 @@ public class seleccion extends AppCompatActivity {
         String comando_19 = ", tpse_02 = ";
         String comando_20 = ", pse_03 = ";
         String comando_21 = ", tpse_03 = ";
-        String comando_22 = ", pc_01 = ";
-        String comando_23 = ", tpc_01 = ";
-        String comando_24 = ", pc_02 = ";
-        String comando_25 = ", tpc_02 = ";
-        String comando_26 = ", pc_03 = ";
-        String comando_27 = ", tpc_03 = ";
         String comando_28 = ", encuesto = ";
         String comando_50 = " WHERE registro = " + "'" + el_registro + "'";
 
@@ -681,12 +551,6 @@ public class seleccion extends AppCompatActivity {
                  comando_19, tiempo_08,
                  comando_20,  seleccion_09,
                  comando_21, tiempo_09,
-                 comando_22,  seleccion_10,
-                 comando_23, tiempo_10,
-                 comando_24,  seleccion_11,
-                 comando_25, tiempo_11,
-                 comando_26,  seleccion_12,
-                 comando_27, tiempo_12,
                  comando_28, "'" + el_encuesto + "'",
                  comando_50);
         startActivity(selint);
@@ -728,12 +592,6 @@ public class seleccion extends AppCompatActivity {
         String comando_19 = ", tpse_02 = ";
         String comando_20 = ", pse_03 = ";
         String comando_21 = ", tpse_03 = ";
-        String comando_22 = ", pc_01 = ";
-        String comando_23 = ", tpc_01 = ";
-        String comando_24 = ", pc_02 = ";
-        String comando_25 = ", tpc_02 = ";
-        String comando_26 = ", pc_03 = ";
-        String comando_27 = ", tpc_03 = ";
         String comando_28 = ", encuesto = ";
         String comando_50 = " WHERE registro = " + "'" + el_registro + "'";
 
@@ -759,12 +617,6 @@ public class seleccion extends AppCompatActivity {
                 comando_19, tiempo_08,
                 comando_20,  seleccion_09,
                 comando_21, tiempo_09,
-                comando_22,  seleccion_10,
-                comando_23, tiempo_10,
-                comando_24,  seleccion_11,
-                comando_25, tiempo_11,
-                comando_26,  seleccion_12,
-                comando_27, tiempo_12,
                 comando_28, "'" + el_encuesto + "'",
                 comando_50);
         abortarSelec.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
