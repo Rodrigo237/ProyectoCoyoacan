@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.nio.channels.FileChannel;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -14,6 +15,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.hardware.Sensor;
@@ -32,8 +34,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.iventa.pruebaspsicologia2.MainActivity;
-import com.iventa.pruebaspsicologia2.R;
+
 import com.iventa.pruebaspsicologia2.bases.FuenteCuestionarioBasico;
 import com.iventa.pruebaspsicologia2.bases.FuenteCuestionarioIndividual;
 
@@ -110,20 +111,20 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
 
         fuenteDeCuestionarioIndividual = new FuenteCuestionarioIndividual(this);
         fuenteDeCuestionarioBasico = new FuenteCuestionarioBasico(this);
-
+/*
         texto_cantidad_de_registros.setVisibility(View.INVISIBLE);
         texto_contenido_periodo.setVisibility(View.INVISIBLE);
         texto_contenido_hoy.setVisibility(View.VISIBLE);
         botonImportarBaseDeDatos.setVisibility(View.INVISIBLE);
         botonExportarBaseDeDatos.setVisibility(View.INVISIBLE);
         botonEliminarBaseDeDatos.setVisibility(View.INVISIBLE);
-        botonEnviarCorreo.setVisibility(View.VISIBLE);
+        botonEnviarCorreo.setVisibility(View.VISIBLE);*/
 
         fuenteDeCuestionarioBasico = new FuenteCuestionarioBasico(this);
         fuenteDeCuestionarioBasico.open();
 
 //		exhibe_registros();
-
+/*
         monitor_01.setText("Tableta numero: " + leer_tableta());
         monitor_02.setText("Nombre del fabricante: " + android.os.Build.MANUFACTURER);
         monitor_03.setText("Nombre del modelo: " + android.os.Build.MODEL);
@@ -162,7 +163,7 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
                 monitor_10.setText("Pantalla de baja densidad 120 (LDPI)");
                 break;
         }
-
+*/
         lista_de_archivos.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> parent, android.view.View v, int renglon, long id) {
 
@@ -277,16 +278,18 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
     }
 
     public void importarBaseDeDatos() {
+        texto_cantidad_de_registros.setText("Prueba");
         File sd = Environment.getExternalStorageDirectory();
         File data = Environment.getDataDirectory();
         FileChannel source = null;
         FileChannel destination = null;
-        String currentDBPath = "/data/" + nombre_del_paquete + "/databases/" + nombre_de_base_de_datos;
+
+       String currentDBPath = "/data/" + nombre_del_paquete + "/databases/" + nombre_de_base_de_datos;
         String backupDBPath = nombre_de_base_de_datos;
         File currentDB = new File(data, currentDBPath);
         File backupDB = new File(sd, backupDBPath);
 
-/*		monitor_01.setVisibility(View.VISIBLE);
+		monitor_01.setVisibility(View.VISIBLE);
 		monitor_02.setVisibility(View.VISIBLE);
 		monitor_03.setVisibility(View.VISIBLE);
 		monitor_04.setVisibility(View.VISIBLE);
@@ -297,30 +300,26 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
 		monitor_09.setVisibility(View.VISIBLE);
 		monitor_10.setVisibility(View.VISIBLE);
 
-		monitor_01.setText(sd.toString());
-		monitor_02.setText(data.toString());
-		monitor_03.setText(currentDBPath.toString());
-		monitor_04.setText(backupDBPath.toString());
-		monitor_05.setText(currentDB.toString());
-		monitor_06.setText(backupDB.toString());*/
+        String filename = nombre_de_base_de_datos;
+        String string = " ";
+        FileOutputStream outputStream;
 
         try {
-            source = new FileInputStream(backupDB).getChannel();
-            destination = new FileOutputStream(currentDB).getChannel();
-            destination.transferFrom(source, 0, source.size());
-            source.close();
-            destination.close();
-            Toast.makeText(this, "La base de datos " + nombre_de_base_de_datos + " ha sido importada", Toast.LENGTH_LONG).show();
+         outputStream = openFileOutput(filename,Context.MODE_PRIVATE);
+         outputStream.write(backupDBPath.getBytes());
+         outputStream.close();
+            //Toast.makeText(this, "La base de datos " + nombre_de_base_de_datos + " ha sido importada", Toast.LENGTH_LONG).show();
+          //  monitor_02.setText("source = " +source);
+           // monitor_03.setText("destination = " + destination);
+            monitor_04.setText("currentDBPath = " + currentDBPath);
+            monitor_05.setText("backupDBPath = " + backupDBPath);
         } catch(IOException e) {
             e.printStackTrace();
 
-/*			monitor_07.setText(e.toString());
-			monitor_08.setText(e.toString());
-			monitor_09.setText(e.toString());
-			monitor_10.setText("Quien sabe que paso");*/
+
         }
 
-        cantidad_de_registros();
+       // cantidad_de_registros();
     }
 
     public void exportarBaseDeDatos() {
