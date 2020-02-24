@@ -306,8 +306,9 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
 
 
         try {
-         outputStream = openFileOutput(currentDBPath,Context.MODE_PRIVATE);
-         outputStream.write(nombre_de_base_de_datos.getBytes());
+         outputStream = openFileOutput(filename,Context.MODE_PRIVATE);
+         outputStream.flush();
+         outputStream.write(backupDBPath.getBytes());
          monitor_02.setText("Reg = "+ backupDBPath.getBytes().toString());
          outputStream.close();
          Toast.makeText(this, "La base de datos " + nombre_de_base_de_datos + " ha sido importada", Toast.LENGTH_LONG).show();
