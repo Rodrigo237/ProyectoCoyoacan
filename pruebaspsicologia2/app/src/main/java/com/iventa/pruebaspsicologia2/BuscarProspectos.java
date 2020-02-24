@@ -601,6 +601,7 @@ public class BuscarProspectos extends Activity implements OnItemClickListener {
 
             dialogoConfirmacion();
         }
+        fuenteDeCuestionarioIndividual.close();
     } // Fin de seleccionarArea.
 
     public void seleccionarManzana(View v) {
@@ -653,6 +654,7 @@ public class BuscarProspectos extends Activity implements OnItemClickListener {
 
             dialogoConfirmacion();
         }
+        fuenteDeCuestionarioIndividual.close();
     } // Fin de seleccionarArea.
 
     public void seleccionarFamilia(View v) {
@@ -777,6 +779,9 @@ public class BuscarProspectos extends Activity implements OnItemClickListener {
         campoPaterno.setTextColor(Color.RED);
         campoMaterno.setBackgroundColor(Color.WHITE);
         campoMaterno.setTextColor(Color.RED);
+
+        fuenteDeCuestionarioIndividual.close();
+        fuenteDeCuestionarioBasico.close();
     }
 
     public void crearCuestionarios() {

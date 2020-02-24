@@ -64,7 +64,7 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
     private Button botonExportarBaseDeDatos;
     private Button botonEliminarBaseDeDatos;
     private Button botonEnviarCorreo;
-    private String nombre_del_paquete = "com.example.cuestionariopsicologia";
+    private String nombre_del_paquete = "com.iventa.pruebaspsicologia2";
     private String importar_base_de_datos = "Importar base de datos";
     private String exportar_base_de_datos = "Exportar base de datos";
     private String eliminar_base_de_datos = "Eliminar base de datos";
@@ -278,13 +278,13 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
     }
 
     public void importarBaseDeDatos() {
-        texto_cantidad_de_registros.setText("Prueba");
+       // texto_cantidad_de_registros.setText("Prueba");
         File sd = Environment.getExternalStorageDirectory();
         File data = Environment.getDataDirectory();
         FileChannel source = null;
         FileChannel destination = null;
 
-       String currentDBPath = "/data/" + nombre_del_paquete + "/databases/" + nombre_de_base_de_datos;
+       String currentDBPath = "/data/data/" + nombre_del_paquete + "/databases/" + nombre_de_base_de_datos;
         String backupDBPath = nombre_de_base_de_datos;
         File currentDB = new File(data, currentDBPath);
         File backupDB = new File(sd, backupDBPath);
@@ -301,25 +301,28 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
 		monitor_10.setVisibility(View.VISIBLE);
 
         String filename = nombre_de_base_de_datos;
-        String string = " ";
+        //String string = " ";
         FileOutputStream outputStream;
 
+
         try {
-         outputStream = openFileOutput(filename,Context.MODE_PRIVATE);
-         outputStream.write(backupDBPath.getBytes());
+         outputStream = openFileOutput(currentDBPath,Context.MODE_PRIVATE);
+         outputStream.write(nombre_de_base_de_datos.getBytes());
+         monitor_02.setText("Reg = "+ backupDBPath.getBytes().toString());
          outputStream.close();
-            //Toast.makeText(this, "La base de datos " + nombre_de_base_de_datos + " ha sido importada", Toast.LENGTH_LONG).show();
+         Toast.makeText(this, "La base de datos " + nombre_de_base_de_datos + " ha sido importada", Toast.LENGTH_LONG).show();
           //  monitor_02.setText("source = " +source);
            // monitor_03.setText("destination = " + destination);
             monitor_04.setText("currentDBPath = " + currentDBPath);
             monitor_05.setText("backupDBPath = " + backupDBPath);
+
         } catch(IOException e) {
             e.printStackTrace();
 
 
         }
 
-       // cantidad_de_registros();
+        cantidad_de_registros();
     }
 
     public void exportarBaseDeDatos() {
@@ -448,6 +451,7 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
         if (nombre_de_base_de_datos == "CuestionarioIndividual") {
             fuenteDeCuestionarioIndividual.open();
             texto_cantidad_de_registros.setText("Cantidad de registros = " + fuenteDeCuestionarioIndividual.cuentaRegistrosEnIndividual().toString());
+            monitor_01.setText("No. registros = "+ fuenteDeCuestionarioIndividual.cuentaRegistrosEnIndividual().toString());
         }
 
         if (nombre_de_base_de_datos == "CuestionarioBasico") {
@@ -462,7 +466,7 @@ public class TabletaAdministrador extends Activity implements OnClickListener {
 //			la_tableta = (String) monitor_01.getText();
             la_tableta = leer_tableta();
             el_encuesto = "Raul Ramirez Reyes";
-            monitor_01.setText("Probando");
+          //  monitor_01.setText("Probando");
             fuenteDeCuestionarioBasico.open();
             fuenteDeCuestionarioBasico.crearRegistroPosicionador(la_tableta, el_encuesto);
         }
